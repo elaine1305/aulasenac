@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            background-color: grey;
+            color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cadastro de Aluno</h1>
+    <input type="text" placeholder="Nome" name="nome" id="nome">
+    <input type="text" placeholder="Sobrenome" name="sobrenome" id="sobrenome">
+    <input type="date" placeholder="Data" name="data" id="data">
+    <input type="email" placeholder="Email" name="email" id="email">
+    <br>
+    <button onclick="mudarNome()">Elaine</button>
+    <button onclick="mudarSobrenome()">Sobrenome</button>
+    <button onclick="mudarEmail()">Email</button>
+    <button onclick="limparTextos()">Limpar nome</button>
+</body>
+<script>
+
+    function mudarNome() {
+        document.getElementById('nome').value = 'Elaine'
+    }
+    function mudarSobrenome() {
+        document.getElementById('sobrenome').value = 'Maciel'
+    }
+    function mudarEmail() {
+        document.getElementById('email').value = 'elaine@elaine.com'
+    }
+    function limparTextos() {
+        document.getElementById('nome').value = ''
+        document.getElementById('sobrenome').value = ''
+        document.getElementById('email').value = '' 
+    }
+
+</script>
+
+</html>
